@@ -1,0 +1,6 @@
+module adder2(a, b, y);
+input[1:0] a, b;
+output[1:0] y;
+assign y = a + b;
+endmodule
+
