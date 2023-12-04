@@ -1,0 +1,521 @@
+// Copyright (C) 1991-2009 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition"
+
+// DATE "12/04/2020 02:08:28"
+
+// 
+// Device: Altera EP20K200EBC652-3 Package BGA652
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module up256 (
+	clk,
+	reset,
+	count);
+input 	clk;
+input 	reset;
+output 	[7:0] count;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("up256_v.sdo");
+// synopsys translate_on
+
+wire \clk~combout ;
+wire \reset~combout ;
+wire \count[0]~reg0_regout ;
+wire \count[1]~reg0_regout ;
+wire \count[1]~0 ;
+wire \count[2]~reg0_regout ;
+wire \count[2]~2 ;
+wire \count[3]~reg0_regout ;
+wire \count[3]~4 ;
+wire \count[4]~reg0_regout ;
+wire \count[4]~6 ;
+wire \count[5]~reg0_regout ;
+wire \count[5]~8 ;
+wire \count[6]~reg0_regout ;
+wire \count[6]~10 ;
+wire \count[7]~reg0_regout ;
+
+
+// atom is at PIN_T2
+apex20ke_io \clk~I (
+	.datain(gnd),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(gnd),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\clk~combout ),
+	.regout(),
+	.padio(clk));
+// synopsys translate_off
+defparam \clk~I .feedback_mode = "from_pin";
+defparam \clk~I .operation_mode = "input";
+defparam \clk~I .power_up = "low";
+defparam \clk~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AP22
+apex20ke_io \reset~I (
+	.datain(gnd),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(gnd),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\reset~combout ),
+	.regout(),
+	.padio(reset));
+// synopsys translate_off
+defparam \reset~I .feedback_mode = "from_pin";
+defparam \reset~I .operation_mode = "input";
+defparam \reset~I .power_up = "low";
+defparam \reset~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC9_8_T1
+apex20ke_lcell \count[0]~reg0 (
+// Equation(s):
+// \count[0]~reg0_regout  = DFFE(!\count[0]~reg0_regout , GLOBAL(\clk~combout ), \reset~combout , , )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\count[0]~reg0_regout ),
+	.datad(vcc),
+	.cin(gnd),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[0]~reg0_regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \count[0]~reg0 .lut_mask = "0f0f";
+defparam \count[0]~reg0 .operation_mode = "normal";
+defparam \count[0]~reg0 .output_mode = "reg_only";
+defparam \count[0]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC1_8_T1
+apex20ke_lcell \count[1]~reg0 (
+// Equation(s):
+// \count[1]~reg0_regout  = DFFE(\count[0]~reg0_regout  $ \count[1]~reg0_regout , GLOBAL(\clk~combout ), \reset~combout , , )
+// \count[1]~0  = CARRY(\count[0]~reg0_regout  & \count[1]~reg0_regout )
+
+	.dataa(\count[0]~reg0_regout ),
+	.datab(\count[1]~reg0_regout ),
+	.datac(vcc),
+	.datad(vcc),
+	.cin(gnd),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[1]~reg0_regout ),
+	.cout(\count[1]~0 ),
+	.cascout());
+// synopsys translate_off
+defparam \count[1]~reg0 .lut_mask = "6688";
+defparam \count[1]~reg0 .operation_mode = "arithmetic";
+defparam \count[1]~reg0 .output_mode = "reg_only";
+defparam \count[1]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC2_8_T1
+apex20ke_lcell \count[2]~reg0 (
+// Equation(s):
+// \count[2]~reg0_regout  = DFFE(\count[2]~reg0_regout  $ \count[1]~0 , GLOBAL(\clk~combout ), \reset~combout , , )
+// \count[2]~2  = CARRY(!\count[1]~0  # !\count[2]~reg0_regout )
+
+	.dataa(vcc),
+	.datab(\count[2]~reg0_regout ),
+	.datac(vcc),
+	.datad(vcc),
+	.cin(\count[1]~0 ),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[2]~reg0_regout ),
+	.cout(\count[2]~2 ),
+	.cascout());
+// synopsys translate_off
+defparam \count[2]~reg0 .cin_used = "true";
+defparam \count[2]~reg0 .lut_mask = "3c3f";
+defparam \count[2]~reg0 .operation_mode = "arithmetic";
+defparam \count[2]~reg0 .output_mode = "reg_only";
+defparam \count[2]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC3_8_T1
+apex20ke_lcell \count[3]~reg0 (
+// Equation(s):
+// \count[3]~reg0_regout  = DFFE(\count[3]~reg0_regout  $ !\count[2]~2 , GLOBAL(\clk~combout ), \reset~combout , , )
+// \count[3]~4  = CARRY(\count[3]~reg0_regout  & !\count[2]~2 )
+
+	.dataa(vcc),
+	.datab(\count[3]~reg0_regout ),
+	.datac(vcc),
+	.datad(vcc),
+	.cin(\count[2]~2 ),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[3]~reg0_regout ),
+	.cout(\count[3]~4 ),
+	.cascout());
+// synopsys translate_off
+defparam \count[3]~reg0 .cin_used = "true";
+defparam \count[3]~reg0 .lut_mask = "c30c";
+defparam \count[3]~reg0 .operation_mode = "arithmetic";
+defparam \count[3]~reg0 .output_mode = "reg_only";
+defparam \count[3]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC4_8_T1
+apex20ke_lcell \count[4]~reg0 (
+// Equation(s):
+// \count[4]~reg0_regout  = DFFE(\count[4]~reg0_regout  $ \count[3]~4 , GLOBAL(\clk~combout ), \reset~combout , , )
+// \count[4]~6  = CARRY(!\count[3]~4  # !\count[4]~reg0_regout )
+
+	.dataa(vcc),
+	.datab(\count[4]~reg0_regout ),
+	.datac(vcc),
+	.datad(vcc),
+	.cin(\count[3]~4 ),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[4]~reg0_regout ),
+	.cout(\count[4]~6 ),
+	.cascout());
+// synopsys translate_off
+defparam \count[4]~reg0 .cin_used = "true";
+defparam \count[4]~reg0 .lut_mask = "3c3f";
+defparam \count[4]~reg0 .operation_mode = "arithmetic";
+defparam \count[4]~reg0 .output_mode = "reg_only";
+defparam \count[4]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC5_8_T1
+apex20ke_lcell \count[5]~reg0 (
+// Equation(s):
+// \count[5]~reg0_regout  = DFFE(\count[5]~reg0_regout  $ !\count[4]~6 , GLOBAL(\clk~combout ), \reset~combout , , )
+// \count[5]~8  = CARRY(\count[5]~reg0_regout  & !\count[4]~6 )
+
+	.dataa(vcc),
+	.datab(\count[5]~reg0_regout ),
+	.datac(vcc),
+	.datad(vcc),
+	.cin(\count[4]~6 ),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[5]~reg0_regout ),
+	.cout(\count[5]~8 ),
+	.cascout());
+// synopsys translate_off
+defparam \count[5]~reg0 .cin_used = "true";
+defparam \count[5]~reg0 .lut_mask = "c30c";
+defparam \count[5]~reg0 .operation_mode = "arithmetic";
+defparam \count[5]~reg0 .output_mode = "reg_only";
+defparam \count[5]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC6_8_T1
+apex20ke_lcell \count[6]~reg0 (
+// Equation(s):
+// \count[6]~reg0_regout  = DFFE(\count[6]~reg0_regout  $ \count[5]~8 , GLOBAL(\clk~combout ), \reset~combout , , )
+// \count[6]~10  = CARRY(!\count[5]~8  # !\count[6]~reg0_regout )
+
+	.dataa(vcc),
+	.datab(\count[6]~reg0_regout ),
+	.datac(vcc),
+	.datad(vcc),
+	.cin(\count[5]~8 ),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[6]~reg0_regout ),
+	.cout(\count[6]~10 ),
+	.cascout());
+// synopsys translate_off
+defparam \count[6]~reg0 .cin_used = "true";
+defparam \count[6]~reg0 .lut_mask = "3c3f";
+defparam \count[6]~reg0 .operation_mode = "arithmetic";
+defparam \count[6]~reg0 .output_mode = "reg_only";
+defparam \count[6]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC7_8_T1
+apex20ke_lcell \count[7]~reg0 (
+// Equation(s):
+// \count[7]~reg0_regout  = DFFE(\count[6]~10  $ !\count[7]~reg0_regout , GLOBAL(\clk~combout ), \reset~combout , , )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\count[7]~reg0_regout ),
+	.cin(\count[6]~10 ),
+	.cascin(vcc),
+	.clk(\clk~combout ),
+	.aclr(!\reset~combout ),
+	.ena(vcc),
+	.sclr(gnd),
+	.sload(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count[7]~reg0_regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \count[7]~reg0 .cin_used = "true";
+defparam \count[7]~reg0 .lut_mask = "f00f";
+defparam \count[7]~reg0 .operation_mode = "normal";
+defparam \count[7]~reg0 .output_mode = "reg_only";
+defparam \count[7]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_AF5
+apex20ke_io \count[0]~I (
+	.datain(\count[0]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[0]));
+// synopsys translate_off
+defparam \count[0]~I .feedback_mode = "none";
+defparam \count[0]~I .operation_mode = "output";
+defparam \count[0]~I .power_up = "low";
+defparam \count[0]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AF4
+apex20ke_io \count[1]~I (
+	.datain(\count[1]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[1]));
+// synopsys translate_off
+defparam \count[1]~I .feedback_mode = "none";
+defparam \count[1]~I .operation_mode = "output";
+defparam \count[1]~I .power_up = "low";
+defparam \count[1]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AF3
+apex20ke_io \count[2]~I (
+	.datain(\count[2]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[2]));
+// synopsys translate_off
+defparam \count[2]~I .feedback_mode = "none";
+defparam \count[2]~I .operation_mode = "output";
+defparam \count[2]~I .power_up = "low";
+defparam \count[2]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AF2
+apex20ke_io \count[3]~I (
+	.datain(\count[3]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[3]));
+// synopsys translate_off
+defparam \count[3]~I .feedback_mode = "none";
+defparam \count[3]~I .operation_mode = "output";
+defparam \count[3]~I .power_up = "low";
+defparam \count[3]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AF1
+apex20ke_io \count[4]~I (
+	.datain(\count[4]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[4]));
+// synopsys translate_off
+defparam \count[4]~I .feedback_mode = "none";
+defparam \count[4]~I .operation_mode = "output";
+defparam \count[4]~I .power_up = "low";
+defparam \count[4]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AE6
+apex20ke_io \count[5]~I (
+	.datain(\count[5]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[5]));
+// synopsys translate_off
+defparam \count[5]~I .feedback_mode = "none";
+defparam \count[5]~I .operation_mode = "output";
+defparam \count[5]~I .power_up = "low";
+defparam \count[5]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AE5
+apex20ke_io \count[6]~I (
+	.datain(\count[6]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[6]));
+// synopsys translate_off
+defparam \count[6]~I .feedback_mode = "none";
+defparam \count[6]~I .operation_mode = "output";
+defparam \count[6]~I .power_up = "low";
+defparam \count[6]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_AE4
+apex20ke_io \count[7]~I (
+	.datain(\count[7]~reg0_regout ),
+	.clk(gnd),
+	.aclr(gnd),
+	.ena(vcc),
+	.oe(vcc),
+	.preset(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.padio(count[7]));
+// synopsys translate_off
+defparam \count[7]~I .feedback_mode = "none";
+defparam \count[7]~I .operation_mode = "output";
+defparam \count[7]~I .power_up = "low";
+defparam \count[7]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+endmodule

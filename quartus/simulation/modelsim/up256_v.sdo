@@ -1,0 +1,366 @@
+// Copyright (C) 1991-2009 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP20K200EBC652-3 Package BGA652
+// 
+
+// 
+// This SDF file should be used for ModelSim-Altera (Verilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "up256")
+  (DATE "12/04/2020 02:08:28")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II")
+  (VERSION "Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE clk\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (1451:1451:1451) (1451:1451:1451))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE reset\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (1923:1923:1923) (1923:1923:1923))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[0\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (343:343:343) (343:343:343))
+        (IOPATH datac regin (1140:1140:1140) (1140:1140:1140))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[0\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7817:7817:7817) (7817:7817:7817))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[1\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (343:343:343) (343:343:343))
+        (PORT datab (348:348:348) (348:348:348))
+        (IOPATH dataa regin (1306:1306:1306) (1306:1306:1306))
+        (IOPATH datab regin (1265:1265:1265) (1265:1265:1265))
+        (IOPATH dataa cout (2018:2018:2018) (2018:2018:2018))
+        (IOPATH datab cout (1207:1207:1207) (1207:1207:1207))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[1\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7807:7807:7807) (7807:7807:7807))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[2\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (348:348:348) (348:348:348))
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH datab regin (1265:1265:1265) (1265:1265:1265))
+        (IOPATH cin regin (1390:1390:1390) (1390:1390:1390))
+        (IOPATH datab cout (1207:1207:1207) (1207:1207:1207))
+        (IOPATH cin cout (148:148:148) (148:148:148))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[2\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7811:7811:7811) (7811:7811:7811))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[3\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (348:348:348) (348:348:348))
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH datab regin (1265:1265:1265) (1265:1265:1265))
+        (IOPATH cin regin (1390:1390:1390) (1390:1390:1390))
+        (IOPATH datab cout (1207:1207:1207) (1207:1207:1207))
+        (IOPATH cin cout (148:148:148) (148:148:148))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[3\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7814:7814:7814) (7814:7814:7814))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[4\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (348:348:348) (348:348:348))
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH datab regin (1265:1265:1265) (1265:1265:1265))
+        (IOPATH cin regin (1390:1390:1390) (1390:1390:1390))
+        (IOPATH datab cout (1207:1207:1207) (1207:1207:1207))
+        (IOPATH cin cout (148:148:148) (148:148:148))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[4\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7816:7816:7816) (7816:7816:7816))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[5\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (339:339:339) (339:339:339))
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH datab regin (1265:1265:1265) (1265:1265:1265))
+        (IOPATH cin regin (1390:1390:1390) (1390:1390:1390))
+        (IOPATH datab cout (1207:1207:1207) (1207:1207:1207))
+        (IOPATH cin cout (148:148:148) (148:148:148))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[5\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7817:7817:7817) (7817:7817:7817))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[6\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (339:339:339) (339:339:339))
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH datab regin (1265:1265:1265) (1265:1265:1265))
+        (IOPATH cin regin (1390:1390:1390) (1390:1390:1390))
+        (IOPATH datab cout (1207:1207:1207) (1207:1207:1207))
+        (IOPATH cin cout (148:148:148) (148:148:148))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[6\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7818:7818:7818) (7818:7818:7818))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_lcell")
+    (INSTANCE count\[7\]\~reg0.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (339:339:339) (339:339:339))
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH datad regin (328:328:328) (328:328:328))
+        (IOPATH cin regin (1390:1390:1390) (1390:1390:1390))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_lcell_register")
+    (INSTANCE count\[7\]\~reg0.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (7819:7819:7819) (7819:7819:7819))
+        (PORT clk (1497:1497:1497) (1497:1497:1497))
+        (IOPATH (posedge clk) regout (894:894:894) (894:894:894))
+        (IOPATH (posedge aclr) regout (707:707:707) (707:707:707))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (170:170:170))
+      (HOLD datain (posedge clk) (408:408:408))
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[0\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2924:2924:2924) (2924:2924:2924))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[1\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2961:2961:2961) (2961:2961:2961))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[2\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (3008:3008:3008) (3008:3008:3008))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[3\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2977:2977:2977) (2977:2977:2977))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[4\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1417:1417:1417) (1417:1417:1417))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[5\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1446:1446:1446) (1446:1446:1446))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[6\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1448:1448:1448) (1448:1448:1448))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "apex20ke_asynch_io")
+    (INSTANCE count\[7\]\~I.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1451:1451:1451) (1451:1451:1451))
+        (IOPATH datain padio (2711:2711:2711) (2711:2711:2711))
+      )
+    )
+  )
+)

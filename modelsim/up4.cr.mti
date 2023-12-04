@@ -1,0 +1,15 @@
+C:/verilog/up256/up4.v {1 {vlog -work work -nocovercells C:/verilog/up256/up4.v
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module up4
+
+Top level modules:
+	up4
+
+} {} {}} C:/verilog/up256/up4_tb.v {1 {vlog -work work -nocovercells C:/verilog/up256/up4_tb.v
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module up4_test
+
+Top level modules:
+	up4_test
+
+} {} {}}

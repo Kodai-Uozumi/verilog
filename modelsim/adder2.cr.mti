@@ -1,0 +1,15 @@
+C:/verilog/up256/adder2.v {1 {vlog -work work -nocovercells C:/verilog/up256/adder2.v
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module adder2
+
+Top level modules:
+	adder2
+
+} {} {}} C:/verilog/up256/adder2_tb.v {1 {vlog -work work -nocovercells C:/verilog/up256/adder2_tb.v
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module adder2_test
+
+Top level modules:
+	adder2_test
+
+} {} {}}

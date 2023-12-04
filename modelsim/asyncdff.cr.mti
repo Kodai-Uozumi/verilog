@@ -1,0 +1,15 @@
+C:/verilog/up256/asyncdff.v {1 {vlog -work work -nocovercells C:/verilog/up256/asyncdff.v
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module asyncdff
+
+Top level modules:
+	asyncdff
+
+} {} {}} C:/verilog/up256/asyncdff_tb.v {1 {vlog -work work -nocovercells C:/verilog/up256/asyncdff_tb.v
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module asyncdff_test
+
+Top level modules:
+	asyncdff_test
+
+} {} {}}

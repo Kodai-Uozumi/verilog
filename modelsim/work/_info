@@ -1,0 +1,229 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\90\modelsim_ase\examples
+vadder2
+I=eIfKVV_Kme8?[@0zbHa03
+V^h[dUAg=`YUU5MPYmUf=c1
+Z0 dC:\verilog\up256\modelsim
+w1608139197
+8C:/verilog/up256/adder2.v
+FC:/verilog/up256/adder2.v
+L0 1
+Z1 OV;L;6.4a;39
+r1
+31
+Z2 o-work work -nocovercells -O0
+!s100 H@?iZT=0fDIKM3zNoRo?53
+!s85 0
+vadder2_test
+IILGYeh=LKHkSW5A?4H^_>2
+VE:dJl<3]9QnnjL^gjL<kQ1
+Z3 dC:\verilog\up256\modelsim
+w1608139829
+8C:/verilog/up256/adder2_tb.v
+FC:/verilog/up256/adder2_tb.v
+L0 1
+R1
+r1
+31
+R2
+!s100 GXk8[hF^a3`54PY7Um<^X2
+!s85 0
+vasyncdff
+I>RHjH89Xj3PcGT8mGQhO12
+Vj3W`W0lalUz8QGkkKmUW70
+R3
+w1608461965
+8C:/verilog/up256/asyncdff.v
+FC:/verilog/up256/asyncdff.v
+L0 1
+R1
+r1
+31
+R2
+!s100 YIi7kQL?1;J2e?dKHok^G2
+!s85 0
+vasyncdff_test
+IcIP@f?aFE]ogBbAP1VNTk0
+Vc<XobeTScH=e@]ED>CE^l0
+R3
+w1608462071
+8C:/verilog/up256/asyncdff_tb.v
+FC:/verilog/up256/asyncdff_tb.v
+L0 1
+R1
+r1
+31
+R2
+!s100 GX]P35On5XhL@kKDHGUT92
+!s85 0
+vcomp2
+IeP4S`4R;:1e0:FZaz3<8Z0
+VmmH]X6DP4aMldFdUG=0aH0
+R3
+w1607797418
+8C:/verilog/up256/comp2.v
+FC:/verilog/up256/comp2.v
+L0 1
+R1
+r1
+31
+R2
+!s100 mlzfze:RQ17^=_Bi09d9T2
+!s85 0
+vcomp2_test
+IV4gccM=]0KE>Loml`9Zf>0
+VA99jJL5jH`8K29AgZ>ilz1
+R3
+w1607798029
+8C:/verilog/up256/comp2_tb.v
+FC:/verilog/up256/comp2_tb.v
+L0 1
+R1
+r1
+31
+R2
+!s100 ok9ljG?YEkHnI;m8D?DMD1
+!s85 0
+vdown3
+I3AOAhI7^CjDNMb03_:7J83
+VfgFOH;7_j;69ejE]T0ldO0
+R3
+w1608469356
+8C:/verilog/up256/down3.v
+FC:/verilog/up256/down3.v
+L0 1
+R1
+r1
+31
+R2
+!s100 :]RESjH:4S=bTDE9m;f_e1
+!s85 0
+vdown3_test
+!s100 ;URi^ASNH<NG]U4`V@OJj0
+IB2aOBPCiaPce5>ZLTE<9N1
+VMCORi4e2JoB]DX[06YO2I3
+R3
+w1608469461
+8C:/verilog/up256/down3_tb.v
+FC:/verilog/up256/down3_tb.v
+L0 1
+R1
+r1
+!s85 0
+31
+R2
+vprienc
+IYRJ^6i`D7]1`akDfDaA6j2
+V=o0J]ZD_7H7chlbfmX9512
+R3
+w1608135479
+8C:/verilog/up256/prienc.v
+FC:/verilog/up256/prienc.v
+L0 1
+R1
+r1
+31
+R2
+!s100 EBabozQ@iCnM_<?4RNREg0
+!s85 0
+vprienc_test
+I;9A@b@O6HecG4e@Po6Ycf2
+V:zb__7]]LmeK[Jz]X^6bf1
+R3
+w1608136272
+8C:/verilog/up256/prienc_tb.v
+FC:/verilog/up256/prienc_tb.v
+L0 1
+R1
+r1
+31
+R2
+!s100 _5CN`F]iYX5SU@iczSUKX0
+!s85 0
+vsyncdff
+I03Bgj?R]_A8e05M4Bz^9Y1
+Vh678NHKX^JmbOJZjB3E=^0
+R3
+w1608459026
+8C:/verilog/up256/syncdff.v
+FC:/verilog/up256/syncdff.v
+L0 1
+R1
+r1
+31
+R2
+!s100 e`jJ6J^8FUzgPSD;0T^Ll2
+!s85 0
+vsyncdff_test
+I4oO_7l9A17<m1E8DhNIMS1
+VEW^fN6_o<@S=40:oMJSkF2
+R3
+w1608459104
+8C:/verilog/up256/syncdff_tb.v
+FC:/verilog/up256/syncdff_tb.v
+L0 1
+R1
+r1
+31
+R2
+!s100 :@AfWBGLMf`HoH>=fe;U^1
+!s85 0
+vup256
+IbAXoS57U_HEDCX4cG7koV3
+VMmhnKEZfUJWTRR3>iNCoW3
+R3
+Z4 w1607012494
+8C:/verilog/up256/up256.v
+FC:/verilog/up256/up256.v
+L0 3
+R1
+r1
+31
+R2
+!s100 l]`mj@a4[MR7C3;4B1hLo0
+!s85 0
+vup256_test
+I1MVeYB;hkVzIfC5fYA2k]2
+V6nO4BDXP:To29KNTZAMXc0
+R3
+R4
+8C:/verilog/up256/up256_tb.v
+FC:/verilog/up256/up256_tb.v
+L0 3
+R1
+r1
+31
+R2
+!s100 T:@R;DmSlBS:WB]hDbhc:2
+!s85 0
+vup4
+I;fa6W145;zKC3WCBSSQz_0
+VnJOD_z5^1@eCk<fIbUc6;2
+R3
+w1608466345
+8C:/verilog/up256/up4.v
+FC:/verilog/up256/up4.v
+L0 1
+R1
+r1
+31
+R2
+!s100 aK^?:8cPZG=:L276<_O[N0
+!s85 0
+vup4_test
+IjOoMFKe7R`5:m>dN5o0mH0
+V]7f13TXR8c0JMh546b88M1
+R3
+w1608467332
+8C:/verilog/up256/up4_tb.v
+FC:/verilog/up256/up4_tb.v
+L0 1
+R1
+r1
+31
+R2
+!s100 9mWeXNVGMhk;F9Ilbc77?1
+!s85 0
